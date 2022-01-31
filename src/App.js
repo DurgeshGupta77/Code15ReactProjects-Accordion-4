@@ -6,7 +6,7 @@ import SingleQuestion from "./SingleQuestion";
 
 const App = () => {
 
-  const [data, setData] = useState(questions);
+  // const [data, setData] = useState(questions);
 
   return (
     <React.Fragment>
@@ -17,7 +17,7 @@ const App = () => {
           </div>
           <div className="main-content">
             {
-              data.map((question) => {
+              questions.map((question) => {
                 return <SingleQuestion key={question.id} {...question} />;
               })
             }
